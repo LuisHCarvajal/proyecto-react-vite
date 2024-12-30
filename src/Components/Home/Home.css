@@ -1,0 +1,8 @@
+.book-card-container {
+    text-align: center;
+}
+.book-card-container__text {
+    text-align: center;
+    color: blue;
+    background-color: aquamarine;
+}

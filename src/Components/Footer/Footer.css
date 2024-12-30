@@ -1,0 +1,10 @@
+.footer {
+    background-color: #181515;
+    display: flex;
+    justify-content: center;
+}
+.footer-text {
+    color: rgb(243, 5, 5);
+    font-size: 20px;
+    
+}

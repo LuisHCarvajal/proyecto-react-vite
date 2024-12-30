@@ -1,0 +1,51 @@
+/* Estilo para la página de inicio (Landing) */
+.landing {
+    background-image: url(https://images.pexels.com/photos/8534246/pexels-photo-8534246.jpeg?auto=compress&cs=tinysrgb&w=600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing h1 {
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(243, 9, 9);
+}
+
+/* Estilo para el puntero láser */
+.laser-pointer, .laser-pointer-reverse {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    animation: rotateAround 2s linear infinite;
+}
+
+.laser-pointer-reverse {
+    animation: rotateAroundReverse 2s linear infinite;
+}
+
+/* Animación para girar alrededor del título */
+@keyframes rotateAround {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(450px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(450px);
+    }
+}
+
+@keyframes rotateAroundReverse {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(450px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(450px);
+    }
+}
